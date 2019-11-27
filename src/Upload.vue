@@ -150,7 +150,7 @@ export default {
           headers: this.headers,
           withCredentials: this.withCredentials
         }).then((response) => {
-          if (response.status === 200 && response.data.status === 'ok') {
+          if (response.status === 200) {
             this.onSuccess(response.data, file)
             this.loading = false
           } else {
